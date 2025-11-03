@@ -1,0 +1,30 @@
+body {
+    background: rgb(89, 89, 210); /*altera a cor do fundo*/
+    font: normal 15pt Arial; /*altera o tamanho e a fonte da letra*/
+}
+
+header {
+    color: white; /*altera a cor do texto*/
+    text-align: center; /*alinha o texto no centro*/
+}
+
+section {
+    background: white; /*altera a cor do fundo*/
+    border-radius: 10px; /*altera a borda da caixa de texto*/
+    padding: 15px; /*altera a altura da caixa de texto*/
+    width: 500px; /*altera a largura da caixa de texto*/
+    margin: auto; /*altera a margem do texto para o centro*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.512); /*cria uma sombra na caixa de texto*/
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+footer {
+    color: white; /*altera a cor do texto*/
+    text-align: center; /*alinha o texto no centro*/
+    font-style: italic; /*altera o estilo da fonte*/
+}
+
+/**/

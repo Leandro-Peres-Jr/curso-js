@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Nacionalidades!</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Você nasceu em qual pais? <input type="text" name="txtpais" id="txtpais"> <!--input para criar um caixa de coleta de dados-->
+    <input type="button" value="Verificar" onclick="verificar()"> <!--input para criar um botão-->
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = txtp.value.trim() //como o valor ja é texto não precisa converter para numero mas precisa colocar o .valuse
+            // o .trim é para ignorar espaços desnecessarios no inicio ou fim do texto escrito na caixa
+            res.innerHTML = `<p>Você nasceu em/no <strong>${pais}</strong></p>`
+            if (pais == 'Brasil'){
+                res.innerHTML += '<p>Você é Brasileiro!</p>'
+            } else{
+                res.innerHTML += '<p>Você é estrangeiro!</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>
