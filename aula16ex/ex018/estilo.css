@@ -17,6 +17,10 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.512); /*cria uma sombra na caixa de texto*/
 }
 
+select#txtsel {
+    width: 150px
+}
+
 footer {
     color: white; /*altera a cor do texto*/
     text-align: center; /*alinha o texto no centro*/
